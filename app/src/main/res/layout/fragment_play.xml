@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C3E8FA"
+    android:scaleX="1.1"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/back"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="InvalidId" />
+
+    <LinearLayout
+        android:layout_width="200dp"
+        app:layout_constraintTop_toTopOf="@id/back"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="300dp">
+
+
+        <Button
+            android:id="@+id/btn_play_game"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bottom1"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btn_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/bottom2"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btn_info"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bottom3"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btn_more_app"
+            android:layout_width="wrap_content"
+            android:layout_height="57dp"
+            android:background="@drawable/bottom4"
+
+            android:textColor="#fff" />
+<!--        <ImageView-->
+<!--            android:layout_marginLeft="8dp"-->
+<!--            android:layout_marginRight="-16dp"-->
+<!--            android:layout_width="wrap_content"-->
+
+<!--            android:layout_height="64dp"-->
+<!--            android:scaleType="fitXY"-->
+<!--            android:src="@drawable/bottom2"-->
+<!--            tools:layout_editor_absoluteX="52dp"-->
+<!--            tools:layout_editor_absoluteY="1dp" />-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="52dp"-->
+<!--            android:scaleType="fitXY"-->
+<!--            android:src="@drawable/bottom3"-->
+<!--            tools:layout_editor_absoluteX="52dp"-->
+<!--            tools:layout_editor_absoluteY="1dp" />-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="73dp"-->
+<!--            android:scaleType="fitXY"-->
+<!--            android:src="@drawable/bottom4"-->
+<!--            tools:layout_editor_absoluteX="52dp"-->
+<!--            tools:layout_editor_absoluteY="1dp" />-->
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

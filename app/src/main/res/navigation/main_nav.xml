@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.tictoctie.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash"/>
+
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.tictoctie.PlayFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_play" />
+
+
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.example.tictoctie.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" >
+        <action
+            android:id="@+id/action_gameFragment_to_dialogFragment"
+            app:destination="@id/dialogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.tictoctie.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.example.tictoctie.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/winFragment"
+        android:name="com.example.tictoctie.WinFragment"
+        android:label="fragment_win"
+        tools:layout="@layout/fragment_win" />
+    <fragment
+        android:id="@+id/defeatFragment"
+        android:name="com.example.tictoctie.DefeatFragment"
+        android:label="DefeatFragment" />
+    <fragment
+        android:id="@+id/dialogFragment"
+        android:name="com.example.tictoctie.DialogFragment"
+        android:label="fragment_dialog"
+        tools:layout="@layout/fragment_dialog" />
+
+
+</navigation>
