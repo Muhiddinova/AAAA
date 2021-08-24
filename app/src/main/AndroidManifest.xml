@@ -2,7 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 package="com.example.tictoctie">
 
-<application
+ <application
+
     android:allowBackup="true"
     android:icon="@drawable/icon"
     android:label="Tic Tac Toe"
@@ -11,7 +12,11 @@ package="com.example.tictoctie">
     android:theme="@style/AppTheme">
 
 
-    <activity android:name=".MainActivity">
+    <activity android:name="com.example.tictoctie.MainActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="screenSize"
+        android:label="@string/app_name">
+
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
 

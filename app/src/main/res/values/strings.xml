@@ -1,10 +1,12 @@
 <resources>
-    <string name="app_name">TicTocTie</string>
+    <string name="app_name">Tic Tac Toe</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="tic_toc_tie">Tic Toc Tie</string>
+    <string name="tic_toc_tie">Tic Tac Toe</string>
     <string name="player2">Player2:</string>
     <string name="player1">Player1:</string>
     <string name="exit">exit</string>
     <string name="new_game">new game</string>
+    <string name="info">Ushbu "TIC TAC TOE" o\'yini inson aqlini charxlash uchun as qotadi. 0 va X belgilardan iborat . Bu belgilarni diagonal,gorizontal yoki vertikal
+        qatorga qo\'yishda muvaffaqqiyat qozongan o\'yinchi g\'olib hisoblanadi.</string>
 </resources>

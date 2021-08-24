@@ -1,7 +1,9 @@
 package com.example.tictoctie
 
+import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
@@ -12,11 +14,12 @@ import kotlinx.android.synthetic.main.content_main.*
 
 
 class MainActivity : AppCompatActivity() {
+    private val TAG="MainActivity"
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var navController: NavController
     private var lastBackPressed: Long = 0
-    private var mediaPlayer: MediaPlayer? = null
+    var mediaPlayer: MediaPlayer? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,18 +43,32 @@ class MainActivity : AppCompatActivity() {
 
                 }
                 R.id.share -> {
+                    val intent= Intent()
+                    intent.action=Intent.ACTION_SEND
+                    intent.putExtra(Intent.EXTRA_TEXT,"https://play.google.com/store/apps/details?id=com.arcsys.t")
+                    intent.type="text/plain"
+                    startActivity(Intent.createChooser(intent,"Share To:"))
                 }
                 R.id.info -> {
                     binding.drawerLayout.closeDrawer(GravityCompat.START, true)
                     navController.navigate(R.id.infoFragment)
 
                 }
+
             }
             true
         }
 
     }
 
+  private   fun startSound() {
+        if (mediaPlayer == null) {
+            mediaPlayer = MediaPlayer.create(this, R.raw.click);
+        }
+        mediaPlayer?.start()
+
+
+    }
 
     override fun onBackPressed() {
 
@@ -67,6 +84,26 @@ class MainActivity : AppCompatActivity() {
         } else {
             super.onBackPressed()
         }
+
     }
+
+    override fun onPause() {
+        super.onPause()
+        mediaPlayer?.pause()
+        Log.d(TAG, "onPause: ")
+    }
+
+    override fun onStart() {
+        super.onStart()
+        startSound()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        mediaPlayer?.start()
+    }
+
+
+
 
 }

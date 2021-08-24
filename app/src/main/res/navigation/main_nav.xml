@@ -21,7 +21,7 @@
 
     <fragment
         android:id="@+id/gameFragment"
-        android:name="com.example.tictoctie.GameFragment"
+        android:name="com.example.tictoctie.Game10Fragment"
         android:label="fragment_game"
         tools:layout="@layout/fragment_game" >
         <action
@@ -37,21 +37,59 @@
         android:id="@+id/infoFragment"
         android:name="com.example.tictoctie.InfoFragment"
         android:label="fragment_info"
-        tools:layout="@layout/fragment_info" />
-    <fragment
-        android:id="@+id/winFragment"
-        android:name="com.example.tictoctie.WinFragment"
-        android:label="fragment_win"
-        tools:layout="@layout/fragment_win" />
-    <fragment
-        android:id="@+id/defeatFragment"
-        android:name="com.example.tictoctie.DefeatFragment"
-        android:label="DefeatFragment" />
+        tools:layout="@layout/fragment_info" >
+        <action
+            android:id="@+id/action_infoFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+
+
     <fragment
         android:id="@+id/dialogFragment"
         android:name="com.example.tictoctie.DialogFragment"
         android:label="fragment_dialog"
         tools:layout="@layout/fragment_dialog" />
+
+    <fragment
+        android:id="@+id/levelFragment"
+        android:name="com.example.tictoctie.LevelFragment"
+        android:label="fragment_level"/>
+    <fragment
+        android:id="@+id/game1Fragment"
+        android:name="com.example.tictoctie.Game1Fragment"
+        android:label="Game1Fragment" />
+    <fragment
+        android:id="@+id/game2Fragment"
+        android:name="com.example.tictoctie.Game2Fragment"
+        android:label="Game2Fragment" />
+    <fragment
+        android:id="@+id/game4Fragment"
+        android:name="com.example.tictoctie.Game4Fragment"
+        android:label="Game4Fragment" />
+    <fragment
+        android:id="@+id/game5Fragment"
+        android:name="com.example.tictoctie.Game5Fragment"
+        android:label="Game5Fragment" />
+    <fragment
+        android:id="@+id/game6Fragment"
+        android:name="com.example.tictoctie.Game6Fragment"
+        android:label="Game6Fragment" />
+    <fragment
+        android:id="@+id/game7Fragment"
+        android:name="com.example.tictoctie.Game7Fragment"
+        android:label="Game7Fragment" />
+    <fragment
+        android:id="@+id/game8Fragment"
+        android:name="com.example.tictoctie.Game8Fragment"
+        android:label="Game8Fragment" />
+    <fragment
+        android:id="@+id/game9Fragment"
+        android:name="com.example.tictoctie.Game9Fragment"
+        android:label="Game9Fragment" />
+    <fragment
+        android:id="@+id/game3Fragment"
+        android:name="com.example.tictoctie.Game3Fragment"
+        android:label="Game3Fragment" />
 
 
 </navigation>

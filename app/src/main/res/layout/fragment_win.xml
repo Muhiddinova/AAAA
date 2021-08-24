@@ -6,7 +6,7 @@
     android:background="@drawable/win"
 
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".WinFragment">
+   >
 
     <TextView
         android:id="@+id/btn_string"

@@ -6,13 +6,12 @@
     android:background="@drawable/win"
 
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".WinFragment">
+    >
     <TextView
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:id="@+id/btn_disslike"
-        android:text="bundletext"
         android:gravity="center"
         app:layout_constraintBottom_toTopOf="@+id/animationView"
         android:layout_width="match_parent"

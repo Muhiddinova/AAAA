@@ -40,7 +40,7 @@
             android:layout_height="0dp"
             android:layout_gravity="bottom"
             android:background="@drawable/bottom1"
-            android:textColor="#fff" />
+             />
 
         <Button
             android:id="@+id/btn_setting"
@@ -66,32 +66,7 @@
             android:background="@drawable/bottom4"
 
             android:textColor="#fff" />
-<!--        <ImageView-->
-<!--            android:layout_marginLeft="8dp"-->
-<!--            android:layout_marginRight="-16dp"-->
-<!--            android:layout_width="wrap_content"-->
 
-<!--            android:layout_height="64dp"-->
-<!--            android:scaleType="fitXY"-->
-<!--            android:src="@drawable/bottom2"-->
-<!--            tools:layout_editor_absoluteX="52dp"-->
-<!--            tools:layout_editor_absoluteY="1dp" />-->
-
-<!--        <ImageView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="52dp"-->
-<!--            android:scaleType="fitXY"-->
-<!--            android:src="@drawable/bottom3"-->
-<!--            tools:layout_editor_absoluteX="52dp"-->
-<!--            tools:layout_editor_absoluteY="1dp" />-->
-
-<!--        <ImageView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="73dp"-->
-<!--            android:scaleType="fitXY"-->
-<!--            android:src="@drawable/bottom4"-->
-<!--            tools:layout_editor_absoluteX="52dp"-->
-<!--            tools:layout_editor_absoluteY="1dp" />-->
 
     </LinearLayout>
 
