@@ -1,5 +1,5 @@
 # 💫 About Me:
-I'm an Android developer and working with Flutter.
+I'm an Android developer 
 
 
 # 💻 Tech Stack:
